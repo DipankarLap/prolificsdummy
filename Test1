@@ -1,21 +1,5 @@
-public void expensetest() throws InterruptedException {
-		String className = "android.widget.EditText";
-		
-		try {
-			mobileAppDriver.driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-			mobileAppDriver.perform("sendReport", "Verifying User is able to Launch vApprove App " ,"User is able to Launch vApprove App sucessfully", "Pass");
-			Thread.sleep(500);
-			//screenshot
-			mobileAppDriver.perform("captureEntirePageScreenshot", "Initial Spalsh screen of the application",  "Initial Spalsh screen of the application", "Pass");
-			mobileAppDriver.perform("click", "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[2]/android.widget.FrameLayout[1]/android.view.View[1]/android.widget.TextView[1]", "clicked on the initial splash screen");
-
-			Thread.sleep(500);
-
-			//UserName
-			mobileAppDriver.perform("typeSpecifiedText", "class"+className+"0", "sdeswal", "User Name");
-			mobileAppDriver.driver.findElementByName("Approval Central").click();
-
-			//password
-			mobileAppDriver.perform("typePassword", "class"+className+"1", "testing", "Password");
-			mobileAppDriver.driver.findElementByName("Approval Central").click();
-			Thread.sleep(500);
+public class NewOne {
+public static void main(Strings arg[]){
+system.out.println("Nothig");
+}
+}
